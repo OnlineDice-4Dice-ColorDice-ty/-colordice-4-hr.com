@@ -1,0 +1,172 @@
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/dice bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .top-image {
+    margin-top: 22px;
+    width: 80%;
+    max-width: 330px;
+  }
+
+  .roll-button-img {
+    width: 99%;
+    max-width: 650px;
+    height: 56px;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+
+  .dice-container {
+    background-image: url('images/container-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    width: 33%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 15px;
+    border: 5px solid rgba(255,255,255,0.5);
+    text-align: center;
+  }
+
+  .title-image {
+    width: 100%;
+    max-width: 225px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
+  .dice-option {
+    width: 190px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .dice-row {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .dice {
+    width: 81px;
+    height: 79px;
+    border-radius: 10px;
+    border: 7.5px solid white;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .orange { background-color: orange; }
+  .purple { background-color: purple; }
+  .green { background-color: green; }
+  .blue { background-color: blue; }
+  .red { background-color: red; }
+  .yellow { background-color: yellow; }
+
+  .possible-colors-container {
+    background-color: #1E90FF;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .possible-colors-text {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .color-button {
+    background: none;
+    border: none;
+    font: inherit;
+    font-weight: bold;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+
+  .color-button:hover {
+    opacity: 0.7;
+  }
+
+  #video-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  #roll-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  @media (max-width: 480px) {
+    .dice-option {
+      width: 45%;
+    }
+
+    .dice {
+      width: 40px;
+      height: 40px;
+      font-size: 28px;
+      border: 3px solid white;
+    }
+
+    .roll-button-img {
+      max-width: 300px;
+    }
+
+    .title-image {
+      max-width: 250px;
+    }
+
+    .possible-colors-text {
+      font-size: 12px;
+    }
+
+    .color-button {
+      font-size: 12px;
+    }
+  }
